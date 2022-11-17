@@ -7,7 +7,7 @@ club VARCHAR (50) NOT NULL,
 nationality VARCHAR (3) NOT NULL,
 position VARCHAR (10) NOT NULL,
 age SMALLINT NOT NULL
-  )
+  );
   
 CREATE TABLE stats(
 player_id SMALLINT PRIMARY KEY,
@@ -24,7 +24,7 @@ expected_goals DECIMAL (4,2) NOT NULL,
 expected_assists DECIMAL (4,2) NOT NULL,
 yellow_cards SMALLINT NOT NULL,
 red_cards SMALLINT NOT NULL
-  )
+  );
 
 INSERT INTO players(player_id,name,club,nationality,position,age)
 VALUES
@@ -76,7 +76,7 @@ VALUES
 ('45','Japhet Tanganga','Tottenham Hotspur','ENG','DF','21'),
 ('46','Érik Lamela','Tottenham Hotspur','ARG','FW,MF','28'),
 ('47','Carlos Vinícius','Tottenham Hotspur','BRA','FW','25'),
-('48','Dane Scarlett','Tottenham Hotspur','ENG','FW','16')
+('48','Dane Scarlett','Tottenham Hotspur','ENG','FW','16');
 
 INSERT INTO stats(player_id,matches,starts,mins,goals,assists,passes_attempted,percentage_passes_completed,penalty_goals,penalty_attempted,expected_goals,expected_assists,yellow_cards,red_cards)
 VALUES
