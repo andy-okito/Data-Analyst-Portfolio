@@ -1,7 +1,7 @@
 -- CREATE DATABASE AS EPL_20_to_21
 
 CREATE TABLE players(
-player_id PRIMARY KEY,
+player_id NOT NULL PRIMARY KEY,
 name VARCHAR (50) NOT NULL,
 club VARCHAR (50) NOT NULL,
 nationality VARCHAR (3) NOT NULL,
@@ -10,7 +10,7 @@ age SMALLINT NOT NULL
   )
   
 CREATE TABLE stats(
-player_id PRIMARY KEY,
+player_id NOT NULL PRIMARY KEY,
 matches SMALLINT NOT NULL,
 starts SMALLINT NOT NULL,
 mins SMALLINT NOT NULL,
