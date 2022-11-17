@@ -26,9 +26,6 @@ yellow_cards SMALLINT NOT NULL,
 red_cards SMALLINT NOT NULL
   )
 
-
--- INPUT DATA -- 
- 
 INSERT INTO players(player_id,name,club,nationality,position,age)
 VALUES
 
